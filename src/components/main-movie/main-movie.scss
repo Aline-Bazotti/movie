@@ -1,0 +1,82 @@
+.main-movie-container{
+    .main-movie-poster{
+        margin-top: 20vw;
+        width: 100vw;
+        align-items: center;
+        img{
+            width: 50vw;
+            border-radius: 3px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+    h2 {
+        margin-top: 5px;
+        font-size: 20px;
+        color: white;
+        font-weight:400;
+    }
+    p{
+        margin-top: 5px;
+        font-size: 12px;
+        color: gray;
+        font-weight:300;
+    }
+    .main-movie-description{
+        display: none;
+    }
+    .desktop-hidden{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-movie-container{
+        width: calc(100vw - 100px);
+        margin: 100px 50px;
+        display: flex;
+        gap: 100px;
+        
+        .main-movie-poster{
+            width: 250px; 
+            margin: 0px;
+            img{
+                width: 20vw;
+                height: 400px;
+                border-radius: 3px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+        }
+        .main-movie-infos{
+            display: flex;
+            flex-direction: column;
+            width: 530px;
+            h2 {
+                margin-top: 5px;
+                font-size: 40px;
+                color: white;
+                font-weight:400;
+            }
+            p{
+                margin-top: 5px;
+                font-size: 20px;
+                color: gray;
+                font-weight:200;
+            }
+            .main-movie-description{
+                display: block;
+                margin:18px 0 20px;
+                p{
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+            .play-button{
+                p{
+                    color: white;
+                }
+            }
+        
+        }
+       
+    }
+}

@@ -1,0 +1,53 @@
+.main-movie-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+    .star {
+        height: 30px;
+        width: 30px;
+        color: yellow;
+    }
+    .heart {
+        height: 30px;
+        width: 30px;
+        color: red;
+    }
+    .share {
+        height: 30px;
+        width: 30px;
+        color: green;
+    }
+
+    svg {
+        color: white;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-movie-actions {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        margin: 10px 0;
+        .star {
+            height: 30px;
+            width: 30px;
+            color: yellow;
+        }
+        .heart {
+            height: 30px;
+            width: 30px;
+            color: red;
+        }
+        .share {
+            height: 30px;
+            width: 30px;
+            color: green;
+        }
+
+        svg {
+            color: white;
+        }
+    }
+}
